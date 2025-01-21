@@ -31,3 +31,23 @@
     -   Move the b2 banch to the front of the main branch line.
 
     -   The question now is how to resolve this triggered merge conflict locally.
+
+        -   switch back to main branch after the github pull/merge request
+
+        -   pull changes from main
+
+        -   switch back to the second b2 branch
+
+        -   call `git rebase main`
+
+        -   check `git status`
+
+        -   `git rebase —continue` after the conflict has been resolved after viewable in the previous `git status`.
+
+        -   after fixing everything, we need to update our branch.
+
+            -   Because the history of commit after rebase is different from before rebase, you can't directly push the commit.
+
+            -   When using git rebase, you would **undo** all the rebasing (esp. when blinding following the message off `git status`.
+
+        -   instead, call `git push –force origin b2`.
