@@ -16,4 +16,18 @@
 
 -   git switch -c <NAME> will create a new branch and switch to it.
 
--   
+-   "." stands for where I'm current at (e.g., when calling pwd)
+
+    -   Take every file in your working directory and add them if you put a "." with `git add .`
+
+        -   A shortcut way of adding everything in your current directory!
+
+-   Having a .gitignore file can be useful because when you're merging two pull requests, you can be sure that the conflict is not due to some trivial temporary files.
+
+2 Ways of Fixing Branch Conflict:
+
+1.  Manual fix on Github interface remotely.
+2.  Use command: `Rebase` and trigger a merge conflict locally:
+    -   Move the b2 banch to the front of the main branch line.
+
+    -   The question now is how to resolve this triggered merge conflict locally.
