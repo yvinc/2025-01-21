@@ -1,3 +1,6 @@
+ls
+gwd
+
 # this is a bash script file
 # run it like:
 # bash script.sh
